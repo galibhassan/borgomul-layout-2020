@@ -33,9 +33,11 @@
     background-color: #2E3234;
     display: flex;
     flex-direction: column;
+    padding: 1rem;
     align-items: center;
+    justify-content: space-between;
     max-height: 55vh;
-    overflow: hidden;
+    overflow: auto;
 }
 .borgoblog-heading{
     color: #F9F9F9;
@@ -67,6 +69,7 @@
 .borgopost-details{
     height: 100%;
     overflow: hidden;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-content: space-between;
