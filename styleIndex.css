@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif
+}
+
+.container{
+    display: grid;
+    grid-template-rows:  5vh 25vh 15vh 20vh 35vh;
+    grid-template-columns:  25vw 30vw 30vw 15vw;
+    grid-gap: 0px 0px
+}
+.header-desktop{
+    display: none
+}
+.header-mobile{
+    grid-area: 1/1/2/5;
+    background-color: #48596C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(240, 239, 239);
+    font-size: .8rem
+}
+.borgocourse{
+    grid-area: 2/1/4/5;
+    background-color: #D3D6D8
+}
+.borgoblog{
+    grid-area: 4/1/6/3;
+    background-color: #2E3234;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 55vh;
+    overflow: hidden;
+}
+.borgoblog-heading{
+    color: #F9F9F9;
+    font-size: 1.4rem
+}
+.borgoblog-subheading{
+    color: #B47162;
+    font-size: .8rem
+}
+.borgopost-card{
+    width: 70%;
+    height: 35%;
+    background-color: #202020;
+    box-shadow: 1px 2px 15px 1px rgba(0,0,0,.6);
+    border-radius: 1rem 1rem 0px 0px;
+    overflow: hidden;
+
+}
+.borgopost-image-container{
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
+    background: #3E3E3E;
+}
+.borgopost-image{
+    width: 100%
+}
+
+.borgopost-details{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.borgopost-heading{
+    color: #E3E3E3;
+    font-size: 1rem;
+    font-weight: 900
+}
+.borgopost-author{
+    color: #AAAAAA;
+    font-size: .8rem;
+    margin-top: .7rem
+}
+
+.magazine{
+    grid-area: 4/3/6/5;
+    background-color: #50A070;
+}
+.logo{
+    grid-area: 3/2/5/4;
+}
+#logoSvg{
+    width: 100%
+}

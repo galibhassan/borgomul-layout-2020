@@ -1,0 +1,28 @@
+desktop
+    columns
+        20
+        10
+        10
+        15
+        45
+
+    rows
+        5
+        30
+        20
+        20
+        25
+
+mobile
+    rows
+        5
+        35
+        5
+        15
+        40
+
+    columns
+        35
+        20
+        20
+        25
