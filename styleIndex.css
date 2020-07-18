@@ -4,6 +4,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.proxy-container {
+  display: none;
+}
+
 .container {
   display: grid;
   grid-template-rows: 5vh 25vh 15vh 20vh 35vh;
