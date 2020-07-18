@@ -1,97 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
-*{
-    margin: 0px;
-    font-family: 'Roboto', sans-serif
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
-.container{
-    display: grid;
-    grid-template-rows:  5vh 25vh 15vh 20vh 35vh;
-    grid-template-columns:  25vw 30vw 30vw 15vw;
-    grid-gap: 0px 0px
+.container {
+  display: grid;
+  grid-template-rows: 5vh 25vh 15vh 20vh 35vh;
+  grid-template-columns: 25vw 30vw 30vw 15vw;
+  grid-gap: 0px 0px;
 }
-.header-desktop{
-    display: none
+.header-desktop {
+  display: none;
 }
-.header-mobile{
-    grid-area: 1/1/2/5;
-    background-color: #48596C;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: rgb(240, 239, 239);
-    font-size: .8rem
+.header-mobile {
+  grid-area: 1/1/2/5;
+  background-color: #48596c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(240, 239, 239);
+  font-size: 0.8rem;
 }
-.borgocourse{
-    grid-area: 2/1/4/5;
-    background-color: #D3D6D8
+.borgocourse {
+  grid-area: 2/1/4/5;
+  background-color: #d3d6d8;
 }
-.borgoblog{
-    grid-area: 4/1/6/3;
-    background-color: #2E3234;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    max-height: 55vh;
-    overflow: auto;
+.borgoblog {
+  grid-area: 4/1/6/3;
+  background-color: #2e3234;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-between;
+  overflow: hidden;
 }
-.borgoblog-heading{
-    color: #F9F9F9;
-    font-size: 1.4rem
+.borgoblog-heading {
+  color: #f9f9f9;
+  font-size: 1.4rem;
 }
-.borgoblog-subheading{
-    color: #B47162;
-    font-size: .8rem
-}
-.borgopost-card{
-    width: 70%;
-    height: 35%;
-    background-color: #202020;
-    box-shadow: 1px 2px 15px 1px rgba(0,0,0,.6);
-    border-radius: 1rem 1rem 0px 0px;
-    overflow: hidden;
-
-}
-.borgopost-image-container{
-    height: 40%;
-    width: 100%;
-    overflow: hidden;
-    background: #3E3E3E;
-}
-.borgopost-image{
-    width: 100%
+.borgoblog-subheading {
+  color: #b47162;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
 }
 
-.borgopost-details{
-    height: 100%;
-    overflow: hidden;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
+.borgoposts-list {
+  overflow: auto;
 }
-.borgopost-heading{
-    color: #E3E3E3;
-    font-size: 1rem;
-    font-weight: 900
+.borgopost-card {
+  width: 80%;
+  height: 35%;
+  background-color: #202020;
+  box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem 0.5rem 0px 0px;
+  /* border: 1px solid green; */
+  margin: 1.5rem auto 1.5rem auto;
+  overflow: hidden;
 }
-.borgopost-author{
-    color: #AAAAAA;
-    font-size: .8rem;
-    margin-top: .7rem
+.borgopost-image-container {
+  height: 40%;
+  width: 100%;
+  overflow: hidden;
+  background: #3e3e3e;
+}
+.borgopost-image {
+  width: 100%;
 }
 
-.magazine{
-    grid-area: 4/3/6/5;
-    background-color: #50A070;
+.borgopost-details {
+  height: 30%;
+  max-width: 100%;
+  padding: 10px;
+  padding-bottom: 30px;
+  /*   border: 1px solid pink; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  /* align-content: space-between; */
 }
-.logo{
-    grid-area: 3/2/5/4;
+.borgopost-heading {
+  color: #e3e3e3;
+  font-size: 0.7rem;
+  font-weight: 100;
+  text-align: left;
+  /*   border: 1px solid orange; */
+  max-width: 50%;
 }
-#logoSvg{
-    width: 100%
+.borgopost-author {
+  text-align: right;
+  color: #858585;
+  font-size: 0.8rem;
+  /*   border: 1px solid skyblue; */
+}
+
+.magazine {
+  grid-area: 4/3/6/5;
+  background-color: #50a070;
+}
+.logo {
+  grid-area: 3/2/5/4;
+}
+#logoSvg {
+  width: 100%;
 }
