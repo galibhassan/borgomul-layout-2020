@@ -124,10 +124,49 @@
           </div>
         </div>
       </div>
-      <div class="magazine"></div>
+      <div class="magazine">
+        <div class="magazine-heading">বর্গক্ষেত্র</div>
+        <div class="magazine-subheading">বর্গমূলের ম্যাগাজিন</div>
+        <div class="magazine-list">
+          <div class="magazine-single">
+            <img
+              class="magazine-single-image"
+              src="https://images-cdn.dashdigital.com/sciencemagazine/31_august_2018/data/imgpages/mobile3/0001_nmqhxn.jpg?lm=1535656245000"
+              alt=""
+            />
+          </div>
+          <div class="magazine-single">
+            <img
+              class="magazine-single-image"
+              src="https://images-cdn.dashdigital.com/sciencemagazine/26_april_2019/data/imgpages/mobile3/0001_fprtgq.jpg?lm=1556209734000"
+              alt=""
+            />
+          </div>
+          <div class="magazine-single">
+            <img class="magazine-single-image" src="https://pbs.twimg.com/media/CZRB31bXEAAgQPi.jpg" alt="" />
+          </div>
+          <div class="magazine-single">
+            <img
+              class="magazine-single-image"
+              src="https://www.magazine.co.uk/wp/wp-content/uploads/2019/10/THE-5-BEST-SCIENCE-MAGAZINES.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
       <div class="logo">
         <img id="logoSvg" src="./assets/main logo.svg" alt="" />
       </div>
     </div>
+
+    <script>
+      const logo = document.querySelector(".logo");
+      const theta = 6;
+      let i = 0;
+      setInterval(() => {
+        i++;
+        logo.style.transform = `rotate(${i * theta}deg)`;
+      }, 1000);
+    </script>
   </body>
 </html>
