@@ -185,3 +185,13 @@
 #logoSvg {
   width: 100%;
 }
+
+@media all and (min-width: 750px) {
+  .container {
+    display: none;
+  }
+  .proxy-container {
+    display: flex;
+    justify-content: center;
+  }
+}
